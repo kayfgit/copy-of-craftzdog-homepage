@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Paw from '../../public/paw.svg'
 import Github from '../../public/github.svg'
+import Sun from '@/public/sun.svg'
 
 export default function NavBar() {
   return (
@@ -42,8 +43,13 @@ export default function NavBar() {
 
         </li>
       </ul>
-      <button className="w-10 h-10 bg-[#fbd38d] rounded-lg cursor-pointer hover:bg-amber-400 duration-200">
-        S
+      <button className="flex justify-center items-center w-10 h-10 bg-[#fbd38d] rounded-lg cursor-pointer hover:bg-orange-300 duration-200">
+        <Image
+          src={Sun}
+          width={25}
+          height={25}
+          alt='Matsuyama-sensei'
+        />
       </button>
     </div>
   )
