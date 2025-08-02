@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Loves() {
   return (
     <div className="w-full h-28 flex justify-start items-center flex-col">
@@ -5,7 +7,7 @@ export default function Loves() {
         I ♥
       </span>
       <p className="text-white text-md/6 indent-4 my-4 text-justify">
-        Art, Music, <span className="cursor-pointer hover:underline text-pink-400">Drawing</span>, Playing Drums, <span className="cursor-pointer hover:underline text-pink-400">Photography</span>, Leica, Machine Learning
+        Art, Music, <Link href="https://illust.odoruinu.net/"><span className="cursor-pointer hover:underline text-pink-400">Drawing</span></Link>, Playing Drums, <Link href="https://500px.com/p/craftzdog"><span className="cursor-pointer hover:underline text-pink-400">Photography</span></Link>, Leica, Machine Learning
       </p>
     </div>
   )
