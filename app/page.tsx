@@ -5,6 +5,7 @@ import Bio from "@/components/ui/Bio"
 import Loves from "@/components/ui/Loves"
 import Web from "@/components/ui/Web"
 import Newsletter from "@/components/ui/Newsletter"
+import Footer from "@/components/ui/Footer"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Web />
         <Newsletter />
       </div>
+      <Footer />
     </main>
   );
 }
