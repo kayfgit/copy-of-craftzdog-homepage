@@ -5,9 +5,9 @@ export default function Work() {
         Work
       </span>
       <p className="text-white text-md/6 indent-4 my-4 text-justify">
-        Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called <span className="text-pink-400">Inkdrop</span>. He publishes content for marketing his products and his YouTube channel called <span className="text-pink-400">&ldquo;Dev as Life&rdquo;</span> has more than 100k subscribers.
+        Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called <span className="cursor-pointer hover:underline text-pink-400">Inkdrop</span>. He publishes content for marketing his products and his YouTube channel called <span className="cursor-pointer hover:underline text-pink-400">&ldquo;Dev as Life&rdquo;</span> has more than 100k subscribers.
       </p>
-      <button className="rounded-lg bg-[#81e6d9] font-bold px-4 py-2 flex gap-3 mt-2">
+      <button className="cursor-pointer hover:bg-[#81e6f9] rounded-lg bg-[#81e6d9] font-bold px-4 py-2 flex gap-3 mt-2">
         My portfolio <p className="text-sm mt-0.5">{'>'}</p>
       </button>
     </div>
