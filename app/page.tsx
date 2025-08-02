@@ -4,6 +4,7 @@ import Work from "@/components/ui/Work"
 import Bio from "@/components/ui/Bio"
 import Loves from "@/components/ui/Loves"
 import Web from "@/components/ui/Web"
+import Newsletter from "@/components/ui/Newsletter"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Bio />
         <Loves />
         <Web />
+        <Newsletter />
       </div>
     </main>
   );

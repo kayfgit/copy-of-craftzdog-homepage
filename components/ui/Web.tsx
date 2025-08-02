@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Web() {
   return (
-    <div className="w-full h-180 flex justify-start items-center flex-col">
+    <div className="w-full h-105 flex justify-start items-center flex-col">
       <span className="self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         On the web
       </span>
