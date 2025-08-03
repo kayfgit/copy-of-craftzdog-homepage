@@ -16,7 +16,7 @@ export default function About() {
       <div className="px-8 py-3 text-white flex justify-center items-center rounded-lg bg-[#313134] text-md">
         Hello, I&apos;m an indie app developer based in Japan!
       </div>
-      <div className='my-6 w-full h-25 flex text-white'>
+      <div className='mb-6 mt-4 w-full h-25 flex text-white'>
         <div className='w-100 h-25 flex flex-col justify-center '>
           <span className='font-bold text-[40px]'>
             Takuya Matsuyama
@@ -31,7 +31,7 @@ export default function About() {
             width={100}
             height={100}
             alt='Matsuyama-sensei'
-            className=' border-2 border-white rounded-full'
+            className='mt-2 border-2 border-white rounded-full'
           />
         </div>
       </div>
