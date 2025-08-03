@@ -1,24 +1,17 @@
 import Link from 'next/link';
-import Github from '../../public/github.svg'
-import Image from "next/image";
+import { Twitter, Instagram, Github } from '@/components/Icons'
 
 export default function Web() {
   return (
     <div className="w-full h-105 flex justify-start items-center flex-col">
-      <span className="self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
+      <span className="text-lg self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         On the web
       </span>
-      <ul className="my-4 w-full h-40 text-sky-300 font-bold">
+      <ul className="my-4 w-full h-40 text-[#81e6d9] font-bold">
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://github.com/craftzdog">
             <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-              <Image
-                src={Github}
-                width={20}
-                height={20}
-                alt=""
-                className="inline mr-1 mb-0.5"
-              />
+              <Github className='inline mr-3 mb-0.5' fill='#81e6d9' />
               @craftzdog
             </button>
           </Link>
@@ -26,13 +19,7 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/inkdrop_app">
             <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-              <Image
-                src={Github}
-                width={20}
-                height={20}
-                alt=""
-                className="inline mr-1 mb-0.5"
-              />
+              <Twitter fill='#81e6d9' className='inline mr-3 mb-0.5' />
               @inkdrop_app (English)
             </button>
           </Link>
@@ -40,13 +27,7 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/craftzdog">
             <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-              <Image
-                src={Github}
-                width={20}
-                height={20}
-                alt=""
-                className="inline mr-1 mb-0.5"
-              />
+              <Twitter fill='#81e6d9' className='inline mr-3 mb-0.5' />
               @craftzdog (日本語)
             </button>
           </Link>
@@ -55,13 +36,7 @@ export default function Web() {
           <Link href="https://instagram.com/craftzdog">
           </Link>
           <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-            <Image
-              src={Github}
-              width={20}
-              height={20}
-              alt=""
-              className="inline mr-1 mb-0.5"
-            />
+            <Instagram className='inline mr-3 mb-0.5' fill='#81e6d9' />
             @craftzdog
           </button>
         </li>

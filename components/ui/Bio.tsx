@@ -1,7 +1,7 @@
 export default function Bio() {
   return (
     <div className="w-full h-55 flex justify-start items-center flex-col">
-      <span className="self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
+      <span className="text-lg self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         Bio
       </span>
       <div className="self-start text-md text-white my-4">
