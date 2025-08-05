@@ -13,7 +13,7 @@ export default function About() {
         />
         WIP 😉
       </div>
-      <div className="px-8 py-3 text-white flex justify-center items-center rounded-lg bg-[#313134] text-md">
+      <div className="px-8 py-3 text-wrap text-white flex justify-center items-center rounded-lg bg-[#313134] text-md">
         Hello, I&apos;m an indie app developer based in Japan!
       </div>
       <div className='mb-6 mt-4 w-full h-50 md:h-25 md:flex text-white'>

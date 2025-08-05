@@ -9,13 +9,13 @@ export default function NavBar() {
   return (
     <div className="sticky top-0 left-0 w-full h-15 backdrop-blur-xl flex justify-between  md:justify-center items-center text-white gap-12">
       <Link href="https://www.craftz.dog/">
-        <span className="px-4 md:px-0 cursor-pointer font-bold">
+        <span className="group px-4 md:px-0 cursor-pointer font-bold">
           <Image
             src={Paw}
             width={20}
             height={20}
             alt=""
-            className="group-hover:-rotate-25 duration-300 -rotate-40 inline mr-1 mb-0.5"
+            className="group-hover:-rotate-25 duration-300 -rotate-40 inline mr-1 mb-1"
           />
           Takuya Matsuyama
         </span>
