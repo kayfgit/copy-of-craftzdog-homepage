@@ -53,16 +53,16 @@ export default function Web() {
             </div>
           </div>
         </Link>
-        {/* <Link href="https://www.inkdrop.app/"> */}
-        <div className='cursor-pointer w-60 h-45 flex justify-center items-center flex-col'>
-          <div className='w-full h-full bg-zinc-400 rounded-xl mb-2'>
+        <Link href="https://www.inkdrop.app/">
+          <div className='cursor-pointer w-60 h-45 flex justify-center items-center flex-col'>
+            <div className='w-full h-full bg-zinc-400 rounded-xl mb-2'>
+            </div>
+            <div className='flex justify-center items-center flex-col w-full h-10 '>
+              <p>Dev as Life <br /></p>
+              <p className='font-light text-sm'>My YouTube channel ({'>'}200k subs)</p>
+            </div>
           </div>
-          <div className='flex justify-center items-center flex-col w-full h-10 '>
-            <p>Dev as Life <br /></p>
-            <p className='font-light text-sm'>My YouTube channel ({'>'}200k subs)</p>
-          </div>
-        </div>
-        {/* </Link> */}
+        </Link>
       </section>
 
     </div>
