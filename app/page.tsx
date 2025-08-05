@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-[#202023] flex justify-center items-center flex-col">
       <NavBar />
-      <div className="max-w-140 px-6 flex flex-col">
+      <div className="min-w-0 max-w-140 px-8 flex flex-col">
         <About />
         <Work />
         <Bio />

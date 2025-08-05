@@ -3,7 +3,7 @@ import { Twitter, Instagram, Github } from '@/components/Icons'
 
 export default function Web() {
   return (
-    <div className="w-full h-105 flex justify-start items-center flex-col">
+    <div className="max-sm:mb-10 w-full h-140 sm:h-105 flex justify-start items-center flex-col">
       <span className="text-lg self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         On the web
       </span>
@@ -41,7 +41,7 @@ export default function Web() {
           </button>
         </li>
       </ul>
-      <section className='text-white flex justify-between items-center w-full h-45'>
+      <section className='text-white max-sm:flex-col flex justify-between items-center md:w-full h-95 sm:h-45 gap-2'>
         <Link href="https://www.youtube.com/devaslife">
           <div className='cursor-pointer w-60 h-45 flex justify-center items-center flex-col'>
             <div className='w-full h-35 bg-zinc-400 rounded-xl mb-2'>
