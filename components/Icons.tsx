@@ -83,3 +83,37 @@ export const Mail: React.FC<IconProps> = ({ fill = '#fff', width = 18, height = 
     </g>
   </svg>
 )
+
+export const MenuIcon: React.FC<IconProps> = ({ width = 25, height = 25 }) => (
+  <svg
+    viewBox="0 0 24 24"
+    width={width}
+    height={height}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      id="SVGRepo_bgCarrier"
+      strokeWidth="0"
+    >
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+    </g>
+    <g
+      id="SVGRepo_iconCarrier"
+    >
+      <path
+        d="M4 6H20M4 12H20M4 18H20"
+        stroke="#000000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+      </path>
+    </g>
+  </svg>
+)
