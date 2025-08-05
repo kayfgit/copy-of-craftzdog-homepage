@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Loves() {
   return (
-    <div className="w-full h-28 flex justify-start items-center flex-col">
+    <div className="w-full h-full flex justify-start items-center flex-col">
       <span className="text-lg self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         I ♥
       </span>

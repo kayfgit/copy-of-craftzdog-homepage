@@ -1,6 +1,6 @@
 export default function Bio() {
   return (
-    <div className="max-[600px]:mt-30 max-[600px]:mb-15 w-full h-55 flex justify-start items-center flex-col">
+    <div className="w-full h-full flex justify-start items-center flex-col">
       <span className="text-lg self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         Bio
       </span>
