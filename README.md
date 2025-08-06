@@ -4,6 +4,19 @@ Decided to try out my Next, Tailwind and Framer Motion knowledge by copying Deva
 
 ## Seeing the result
 
+Clone the repo: 
+
+```bash
+git clone https://github.com/kayfgit/copy-of-craftzdog-homepage.git
+cd copy-of-craftzdog-homepage
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
 To check it out, run the development server:
 
 ```bash
