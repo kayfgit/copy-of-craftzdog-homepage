@@ -1,13 +1,18 @@
+'use client'
 import Image from "next/image";
 import Paw from '../../public/paw.svg'
 import Github from '../../public/github.svg'
 import Sun from '@/public/sun.svg'
+import { Moon } from "../Icons";
 import Link from "next/link";
 import MenuToggle from "../MenuToggle";
+import { useTheme } from 'next-themes'
 
 export default function NavBar() {
+  const { theme, setTheme } = useTheme()
+
   return (
-    <div className="sticky top-0 left-0 w-full h-15 backdrop-blur-xl flex justify-between  md:justify-center items-center text-white gap-12">
+    <div className="text-black dark:text-white sticky top-0 left-0 w-full h-15 backdrop-blur-xl flex justify-between  md:justify-center items-center gap-12">
       <Link href="https://www.craftz.dog/">
         <span className="group px-4 md:px-0 cursor-pointer font-bold">
           <Image
@@ -57,15 +62,20 @@ export default function NavBar() {
         </Link>
       </ul>
       <div className="p-2 self-end flex gap-2 ">
-        <button className="flex justify-center items-center w-10 h-10 bg-[#fbd38d] rounded-md cursor-pointer hover:bg-orange-300 duration-200">
+
+        <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="flex justify-center items-center w-10 h-10 bg-[#805ad5] dark:bg-[#fbd38d] rounded-md cursor-pointer hover:bg-[#5a2fb6] dark:hover:bg-[#f9bc53] duration-200">
           <Image
             src={Sun}
             width={25}
             height={25}
             alt="a"
+            className="scale-0 dark:scale-100"
           />
+          <Moon fill="#000" className="relative scale-100 dark:scale-0" />
         </button>
+
         <MenuToggle />
+
       </div>
     </div>
   )

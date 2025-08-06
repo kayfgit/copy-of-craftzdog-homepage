@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <>
+    <main className='text-black dark:text-white '>
       <div className="w-full h-70 flex flex-col justify-center items-center">
         <Image
           src={CraftzDog}
@@ -13,10 +13,10 @@ export default function About() {
         />
         WIP 😉
       </div>
-      <div className="px-8 py-3 text-center text-white flex justify-center items-center rounded-lg bg-[#313134] text-md">
+      <div className="px-8 py-3 text-center flex justify-center items-center rounded-lg dark:bg-[#313134] bg-[#f5efe8] text-md">
         Hello, I&apos;m an indie app developer based in Japan!
       </div>
-      <div className='mb-6 mt-4 w-full h-50 md:h-25 md:flex text-white'>
+      <div className='mb-6 mt-4 w-full h-50 md:h-25 md:flex'>
         <div className='w-full h-25 flex flex-col justify-center '>
           <span className='font-bold text-3xl md:text-[40px]'>
             Takuya Matsuyama
@@ -35,7 +35,7 @@ export default function About() {
           />
         </div>
       </div>
-    </>
+    </main>
 
   )
 

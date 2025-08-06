@@ -3,14 +3,14 @@ import { Twitter, Instagram, Github } from '@/components/Icons'
 
 export default function Web() {
   return (
-    <div className="max-sm:mb-10 w-full h-full sm:h-105 flex justify-start items-center flex-col">
-      <span className="text-lg self-start text-white font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
+    <div className="text-black dark:text-white max-sm:mb-10 w-full h-full sm:h-105 flex justify-start items-center flex-col">
+      <span className="text-lg self-start font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         On the web
       </span>
-      <ul className="my-4 w-full h-40 text-[#81e6d9] font-bold">
+      <ul className="my-4 w-full h-40 text-[#319795] dark:text-[#81e6d9] font-bold">
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://github.com/craftzdog">
-            <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
               <Github className='inline mr-3 mb-0.5' fill='#81e6d9' />
               @craftzdog
             </button>
@@ -18,7 +18,7 @@ export default function Web() {
         </li>
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/inkdrop_app">
-            <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
               <Twitter fill='#81e6d9' className='inline mr-3 mb-0.5' />
               @inkdrop_app (English)
             </button>
@@ -26,7 +26,7 @@ export default function Web() {
         </li>
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/craftzdog">
-            <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
               <Twitter fill='#81e6d9' className='inline mr-3 mb-0.5' />
               @craftzdog (日本語)
             </button>
@@ -35,14 +35,14 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://instagram.com/craftzdog">
           </Link>
-          <button className="px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+          <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
             <Instagram className='inline mr-3 mb-0.5' fill='#81e6d9' />
             @craftzdog
           </button>
         </li>
       </ul>
 
-      <section className='text-white max-sm:flex-col flex justify-between items-center w-full h-full gap-2'>
+      <section className='max-sm:flex-col flex justify-between items-center w-full h-full gap-2'>
         <Link href="https://www.youtube.com/devaslife">
           <div className='cursor-pointer w-60 h-45 flex justify-center items-center flex-col'>
             <div className='w-full h-full bg-zinc-400 rounded-xl mb-2'>
