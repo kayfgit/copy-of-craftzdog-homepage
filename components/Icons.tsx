@@ -3,9 +3,15 @@ interface IconProps {
   width?: number;
   height?: number;
   className?: string;
+  stroke?: string;
 }
 
-export const Twitter: React.FC<IconProps> = ({ fill = '#fff', width = 18, height = 18, className, }) => (
+export const Twitter: React.FC<IconProps> = ({
+  fill = 'currentColor',
+  width = 18,
+  height = 18,
+  className,
+}) => (
   <svg
     viewBox="0 0 256 209"
     width={width}
@@ -20,7 +26,12 @@ export const Twitter: React.FC<IconProps> = ({ fill = '#fff', width = 18, height
   </svg>
 )
 
-export const Instagram: React.FC<IconProps> = ({ fill = '#fff', width = 18, height = 18, className }) => (
+export const Instagram: React.FC<IconProps> = ({
+  fill = 'currentColor',
+  width = 18,
+  height = 18,
+  className,
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -29,12 +40,18 @@ export const Instagram: React.FC<IconProps> = ({ fill = '#fff', width = 18, heig
     preserveAspectRatio="xMidYMid"
     viewBox="0 0 256 256"
   >
-    <path fill={fill}
+    <path
+      fill={fill}
       d="M128 23.064c34.177 0 38.225.13 51.722.745 12.48.57 19.258 2.655 23.769 4.408 5.974 2.322 10.238 5.096 14.717 9.575 4.48 4.479 7.253 8.743 9.575 14.717 1.753 4.511 3.838 11.289 4.408 23.768.615 13.498.745 17.546.745 51.723 0 34.178-.13 38.226-.745 51.723-.57 12.48-2.655 19.257-4.408 23.768-2.322 5.974-5.096 10.239-9.575 14.718-4.479 4.479-8.743 7.253-14.717 9.574-4.511 1.753-11.289 3.839-23.769 4.408-13.495.616-17.543.746-51.722.746-34.18 0-38.228-.13-51.723-.746-12.48-.57-19.257-2.655-23.768-4.408-5.974-2.321-10.239-5.095-14.718-9.574-4.479-4.48-7.253-8.744-9.574-14.718-1.753-4.51-3.839-11.288-4.408-23.768-.616-13.497-.746-17.545-.746-51.723 0-34.177.13-38.225.746-51.722.57-12.48 2.655-19.258 4.408-23.769 2.321-5.974 5.095-10.238 9.574-14.717 4.48-4.48 8.744-7.253 14.718-9.575 4.51-1.753 11.288-3.838 23.768-4.408 13.497-.615 17.545-.745 51.723-.745M128 0C93.237 0 88.878.147 75.226.77c-13.625.622-22.93 2.786-31.071 5.95-8.418 3.271-15.556 7.648-22.672 14.764C14.367 28.6 9.991 35.738 6.72 44.155 3.555 52.297 1.392 61.602.77 75.226.147 88.878 0 93.237 0 128c0 34.763.147 39.122.77 52.774.622 13.625 2.785 22.93 5.95 31.071 3.27 8.417 7.647 15.556 14.763 22.672 7.116 7.116 14.254 11.492 22.672 14.763 8.142 3.165 17.446 5.328 31.07 5.95 13.653.623 18.012.77 52.775.77s39.122-.147 52.774-.77c13.624-.622 22.929-2.785 31.07-5.95 8.418-3.27 15.556-7.647 22.672-14.763 7.116-7.116 11.493-14.254 14.764-22.672 3.164-8.142 5.328-17.446 5.95-31.07.623-13.653.77-18.012.77-52.775s-.147-39.122-.77-52.774c-.622-13.624-2.786-22.929-5.95-31.07-3.271-8.418-7.648-15.556-14.764-22.672C227.4 14.368 220.262 9.99 211.845 6.72c-8.142-3.164-17.447-5.328-31.071-5.95C167.122.147 162.763 0 128 0Zm0 62.27C91.698 62.27 62.27 91.7 62.27 128c0 36.302 29.428 65.73 65.73 65.73 36.301 0 65.73-29.428 65.73-65.73 0-36.301-29.429-65.73-65.73-65.73Zm0 108.397c-23.564 0-42.667-19.103-42.667-42.667S104.436 85.333 128 85.333s42.667 19.103 42.667 42.667-19.103 42.667-42.667 42.667Zm83.686-110.994c0 8.484-6.876 15.36-15.36 15.36-8.483 0-15.36-6.876-15.36-15.36 0-8.483 6.877-15.36 15.36-15.36 8.484 0 15.36 6.877 15.36 15.36Z"
     />
   </svg>
 )
-export const Github: React.FC<IconProps> = ({ fill = '#fff', width = 18, height = 18, className }) => (
+export const Github: React.FC<IconProps> = ({
+  fill = 'currentColor',
+  width = 18,
+  height = 18,
+  className,
+}) => (
   <svg
     width={width}
     height={height}
@@ -53,7 +70,12 @@ export const Github: React.FC<IconProps> = ({ fill = '#fff', width = 18, height 
   </svg>
 )
 
-export const Mail: React.FC<IconProps> = ({ fill = '#fff', width = 18, height = 18, className }) => (
+export const Mail: React.FC<IconProps> = ({
+  fill = 'currentColor',
+  width = 18,
+  height = 18,
+  className,
+}) => (
   <svg
     fill={fill}
     width={width}
@@ -84,12 +106,15 @@ export const Mail: React.FC<IconProps> = ({ fill = '#fff', width = 18, height = 
   </svg>
 )
 
-export const MenuIcon: React.FC<IconProps> = ({ width = 25, height = 25 }) => (
+export const MenuIcon: React.FC<IconProps> = ({
+  stroke = 'currentColor',
+  width = 25,
+  height = 25,
+}) => (
   <svg
     viewBox="0 0 24 24"
     width={width}
     height={height}
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g
@@ -108,7 +133,7 @@ export const MenuIcon: React.FC<IconProps> = ({ width = 25, height = 25 }) => (
     >
       <path
         d="M4 6H20M4 12H20M4 18H20"
-        stroke="#000000"
+        stroke={stroke}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -118,7 +143,7 @@ export const MenuIcon: React.FC<IconProps> = ({ width = 25, height = 25 }) => (
   </svg>
 )
 
-export const Moon: React.FC<IconProps> = ({ className, fill = '#fff', width = '20', height = '20' }) => (
+export const Moon: React.FC<IconProps> = ({ className, fill = 'currentColor', width = '20', height = '20' }) => (
   <svg
     className={className}
     viewBox="0 0 24 24"
@@ -152,6 +177,42 @@ export const Moon: React.FC<IconProps> = ({ className, fill = '#fff', width = '2
         fill={fill}
       >
       </path>
+    </g>
+  </svg>
+)
+
+export const Paw: React.FC<IconProps> = ({ className, fill = 'currentColor' }) => (
+  <svg
+    className={className}
+    width={18}
+    height={18}
+    fill={fill}
+    version="1.1"
+    id="Capa_1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 452.589 452.59"
+    stroke="#fed032"
+  >
+    <g
+      id="SVGRepo_bgCarrier"
+      strokeWidth="0"
+    >
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+    </g>
+    <g
+      id="SVGRepo_iconCarrier"
+    >
+      <g>
+        <path
+          d="M375.786,368.016c-1.022,62.699-34.434,85.385-69.898,83.283c-35.465-2.093-60.132-18.537-85.32-18.537l-1.032,0.576 c-25.188,0-49.854,17.021-85.319,19.114c-35.466,2.093-68.876-19.449-69.898-82.148c2.056-57.565,45.911-61.798,83.265-129.8 c32.891-59.881,71.954-55.035,71.954-55.035h1.03c0,0,39.4-4.586,71.955,55.035C329.698,308.599,373.73,310.449,375.786,368.016z M156.203,159.636c31.413-2.382,54.172-40.021,50.832-84.071c-3.34-44.049-31.514-77.828-62.927-75.446 C112.695,2.501,89.936,40.141,93.276,84.19C96.616,128.239,124.789,162.018,156.203,159.636z M275.264,160.401 c30.698,8.368,65.097-19.742,76.83-62.786c11.732-43.044-3.642-84.722-34.339-93.09c-30.698-8.368-65.097,19.742-76.829,62.786 C229.193,110.354,244.566,152.033,275.264,160.401z M417.486,125.937c-26.732-7.288-56.688,17.19-66.905,54.674 c-10.217,37.484,3.171,73.777,29.903,81.064c26.733,7.287,56.688-17.191,66.906-54.675 C457.608,169.518,444.22,133.224,417.486,125.937z M102.008,180.608c-10.218-37.482-40.172-61.961-66.905-54.674 s-40.122,43.581-29.904,81.064c10.218,37.482,40.173,61.961,66.906,54.674C98.837,254.386,112.225,218.092,102.008,180.608z"
+        >
+        </path>
+      </g>
     </g>
   </svg>
 )

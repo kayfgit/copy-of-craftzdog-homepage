@@ -14,7 +14,7 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://github.com/craftzdog">
             <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-              <Github className='inline mr-3 mb-0.5' fill='#81e6d9' />
+              <Github className='inline mr-3 mb-0.5' fill='currentColor' />
               @craftzdog
             </button>
           </Link>
@@ -22,7 +22,7 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/inkdrop_app">
             <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-              <Twitter fill='#81e6d9' className='inline mr-3 mb-0.5' />
+              <Twitter fill='currentColor' className='inline mr-3 mb-0.5' />
               @inkdrop_app (English)
             </button>
           </Link>
@@ -30,7 +30,7 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/craftzdog">
             <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-              <Twitter fill='#81e6d9' className='inline mr-3 mb-0.5' />
+              <Twitter fill='currentColor' className='inline mr-3 mb-0.5' />
               @craftzdog (日本語)
             </button>
           </Link>
@@ -39,7 +39,7 @@ export default function Web() {
           <Link href="https://instagram.com/craftzdog">
           </Link>
           <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
-            <Instagram className='inline mr-3 mb-0.5' fill='#81e6d9' />
+            <Instagram className='inline mr-3 mb-0.5 ' fill='currentColor' />
             @craftzdog
           </button>
         </li>

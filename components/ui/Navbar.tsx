@@ -1,10 +1,9 @@
 'use client'
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
-import Paw from '../../public/paw.svg'
 import Github from '../../public/github.svg'
 import Sun from '@/public/sun.svg'
-import { Moon } from "../Icons";
+import { Moon, Paw } from "../Icons";
 import Link from "next/link";
 import MenuToggle from "../MenuToggle";
 import { useTheme } from 'next-themes'
@@ -16,13 +15,7 @@ export default function NavBar() {
     <div className="text-black dark:text-white sticky top-0 left-0 w-full h-15 backdrop-blur-xl flex justify-between  md:justify-center items-center gap-12">
       <Link href="https://www.craftz.dog/">
         <span className="group px-4 md:px-0 cursor-pointer font-bold">
-          <Image
-            src={Paw}
-            width={20}
-            height={20}
-            alt=""
-            className="group-hover:-rotate-25 duration-300 -rotate-40 inline mr-1 mb-1"
-          />
+          <Paw className="group-hover:rotate-0 -rotate-20 duration-300 inline mr-1 mb-1" />
           Takuya Matsuyama
         </span>
       </Link>

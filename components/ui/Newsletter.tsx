@@ -12,7 +12,7 @@ export default function Newsletter() {
       </p>
       <Link href="https://www.devas.life/">
         <button className="text-white dark:text-black duration-200 cursor-pointer hover:bg-[#81c6f9] rounded-lg bg-[#319795] dark:bg-[#81e6d9] font-bold px-4 py-2 flex gap-3 mt-2">
-          <Mail fill='#000' width={28} height={28} className='inline' />
+          <Mail fill='currentColor' width={28} height={28} className='inline' />
           Sign up my newsletter here
         </button>
       </Link>
