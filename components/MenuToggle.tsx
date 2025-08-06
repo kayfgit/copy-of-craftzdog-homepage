@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { MenuIcon } from "./Icons"
+import Link from "next/link"
 
 export default function MenuToggle() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,25 +16,37 @@ export default function MenuToggle() {
       </button>
 
       {isOpen && (
-        <div className="border-1 border-zinc-500 flex flex-col justify-center items-center absolute top-15 right-2 rounded-xl w-50 h-65 shadow-2xl bg-white dark:bg-[#2d3748]">
-          <button className="text-lg w-full h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
-            About
-          </button>
-          <button className="text-lg w-full h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
-            Works
-          </button>
-          <button className="text-lg w-full h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
-            Wallpapers
-          </button>
-          <button className="text-lg w-full h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
-            Posts
-          </button>
-          <button className="text-lg w-full h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
-            Uses
-          </button>
-          <button className="text-lg w-full h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
-            View Source
-          </button>
+        <div className="border-1 border-zinc-500 flex flex-col justify-center items-start absolute top-15 right-2 rounded-xl w-50 h-65 shadow-2xl bg-white dark:bg-[#2d3748]">
+          <Link href='https://www.craftz.dog/'>
+            <button className="text-lg w-50 h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
+              About
+            </button>
+          </Link>
+          <Link href="https://www.craftz.dog/works">
+            <button className="text-lg w-50 h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
+              Works
+            </button>
+          </Link>
+          <Link href="https://store.craftz.dog/">
+            <button className="text-lg w-50 h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
+              Wallpapers
+            </button>
+          </Link>
+          <Link href="https://www.craftz.dog/posts">
+            <button className="text-lg w-50 h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
+              Posts
+            </button>
+          </Link>
+          <Link href="https://uses.craftz.dog/">
+            <button className="text-lg w-50 h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
+              Uses
+            </button>
+          </Link>
+          <Link href="https://github.com/craftzdog/craftzdog-homepage">
+            <button className="text-lg w-50 h-10 hover:bg-zinc-500/20 duration-200 cursor-pointer flex items-center px-4 hover:underline">
+              View Source
+            </button>
+          </Link>
         </div>
       )}
     </main>

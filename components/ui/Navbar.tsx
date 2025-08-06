@@ -19,7 +19,7 @@ export default function NavBar() {
         </span>
       </Link>
       <ul className="gap-6 cursor-pointer hidden md:flex">
-        <Link href="https://www.craftz.dog/works ">
+        <Link href="https://www.craftz.dog/works">
           <li className="hover:underline ">
             Works
           </li>
