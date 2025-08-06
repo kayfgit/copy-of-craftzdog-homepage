@@ -1,4 +1,7 @@
+'use client'
+
 import NavBar from "@/components/ui/Navbar"
+import { motion } from "motion/react"
 import About from "@/components/ui/About"
 import Work from "@/components/ui/Work"
 import Bio from "@/components/ui/Bio"
@@ -12,14 +15,18 @@ export default function Home() {
     <main className="relative min-h-screen bg-[#f0e7db] dark:bg-[#202023] flex justify-center items-center flex-col">
       <NavBar />
       <div className="min-w-0 max-w-140 px-8 flex flex-col">
-        <About />
-        <Work />
-        <Bio />
-        <Loves />
-        <Web />
-        <Newsletter />
+        <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4 }}>
+          <About />
+        </motion.div>
+        <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1 }}>
+          <Work />
+          <Bio />
+          <Loves />
+          <Web />
+          <Newsletter />
+        </motion.div>
+        <Footer />
       </div>
-      <Footer />
     </main>
   );
 }

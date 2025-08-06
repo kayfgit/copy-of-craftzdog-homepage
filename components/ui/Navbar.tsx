@@ -1,9 +1,8 @@
 'use client'
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
-import Github from '../../public/github.svg'
 import Sun from '@/public/sun.svg'
-import { Moon, Paw } from "../Icons";
+import { Moon, Paw, Github } from "../Icons";
 import Link from "next/link";
 import MenuToggle from "../MenuToggle";
 import { useTheme } from 'next-themes'
@@ -42,14 +41,8 @@ export default function NavBar() {
         </Link>
         <Link href="https://github.com/craftzdog/craftzdog-homepage">
           <li className="hover:underline">
-            <span className="group cursor-pointer">
-              <Image
-                src={Github}
-                width={20}
-                height={20}
-                alt=""
-                className="inline mr-1 mb-0.5"
-              />
+            <span className="group cursor-pointer text-black dark:text-white">
+              <Github fill="currentColor" className="inline mr-1 mb-0.5" />
               Source
             </span>
           </li>
