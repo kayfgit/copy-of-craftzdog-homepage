@@ -9,9 +9,9 @@ import Footer from "@/components/ui/Footer"
 
 export default function Home() {
   return (
-    <main className=" relative min-h-screen bg-[#f0e7db] dark:bg-[#202023] flex justify-center items-center flex-col">
+    <main className="relative min-h-screen bg-[#f0e7db] dark:bg-[#202023] flex justify-center items-center flex-col">
       <NavBar />
-      <div className=" min-w-0 max-w-140 px-8 flex flex-col">
+      <div className="min-w-0 max-w-140 px-8 flex flex-col">
         <About />
         <Work />
         <Bio />

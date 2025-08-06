@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import { AnimatePresence, motion } from "motion/react";
 import Paw from '../../public/paw.svg'
 import Github from '../../public/github.svg'
 import Sun from '@/public/sun.svg'
@@ -63,16 +64,20 @@ export default function NavBar() {
       </ul>
       <div className="p-2 self-end flex gap-2 ">
 
-        <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="flex justify-center items-center w-10 h-10 bg-[#805ad5] dark:bg-[#fbd38d] rounded-md cursor-pointer hover:bg-[#5a2fb6] dark:hover:bg-[#f9bc53] duration-200">
-          <Image
-            src={Sun}
-            width={25}
-            height={25}
-            alt="a"
-            className="scale-0 dark:scale-100"
-          />
-          <Moon fill="#000" className="relative scale-100 dark:scale-0" />
-        </button>
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div key={theme} style={{ display: 'inline-block' }} initial={{ y: -20, opacity: 0 }} animate={{ y: 5, opacity: 1 }} exit={{ y: 20, opacity: 0 }} transition={{ duration: 0.2 }}>
+            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="w-10 h-10 bg-[#805ad5] dark:bg-[#fbd38d] rounded-sm cursor-pointer hover:bg-[#5a2fb6] dark:hover:bg-[#f9bc53] duration-200">
+              <Image
+                src={Sun}
+                width={25}
+                height={25}
+                alt="a"
+                className="relative top-2.25 left-2.25 opacity-0 dark:opacity-100"
+              />
+              <Moon fill="#fff" className="dark:opacity-0 relative -top-3 left-3" />
+            </button>
+          </motion.div>
+        </AnimatePresence>
 
         <MenuToggle />
 
