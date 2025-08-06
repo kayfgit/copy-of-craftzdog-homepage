@@ -10,7 +10,7 @@ export default function MenuToggle() {
     <main>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-white dark:text-black text-2xl font-bold flex md:hidden justify-center items-center w-10 h-10 border-1 border-zinc-700 rounded-md cursor-pointer hover:bg-zinc-700/90 hover:border-zinc-500 duration-200">
+        className="text-white dark:text-black text-2xl font-bold flex md:hidden justify-center items-center w-10 h-10 border-1 border-zinc-700 rounded-md cursor-pointer hover:bg-zinc-700/90 hover:border-zinc-500 duration-200 translate-y-1">
         <MenuIcon />
       </button>
 

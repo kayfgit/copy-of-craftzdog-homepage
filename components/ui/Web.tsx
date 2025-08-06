@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { Twitter, Instagram, Github } from '@/components/Icons'
+import thumbYoutube from '@/public/youtube.png'
+import thumbInkdrop from '@/public/inkdrop-banner.jpg'
+import Image from 'next/image';
 
 export default function Web() {
   return (
@@ -45,21 +48,31 @@ export default function Web() {
       <section className='max-sm:flex-col flex justify-between items-center w-full h-full gap-2'>
         <Link href="https://www.youtube.com/devaslife">
           <div className='cursor-pointer w-60 h-45 flex justify-center items-center flex-col'>
-            <div className='w-full h-full bg-zinc-400 rounded-xl mb-2'>
-            </div>
+            <Image
+              src={thumbYoutube}
+              width={999}
+              height={999}
+              alt='a'
+              className='w-full h-full rounded-xl mb-2'
+            />
             <div className='flex justify-center items-center flex-col w-full h-10 '>
-              <p>Dev as Life <br /></p>
+              <p>Dev as Life</p>
               <p className='font-light text-sm'>My YouTube channel ({'>'}200k subs)</p>
             </div>
           </div>
         </Link>
         <Link href="https://www.inkdrop.app/">
           <div className='cursor-pointer w-60 h-45 flex justify-center items-center flex-col'>
-            <div className='w-full h-full bg-zinc-400 rounded-xl mb-2'>
-            </div>
+            <Image
+              src={thumbInkdrop}
+              width={999}
+              height={999}
+              alt='a'
+              className='w-full h-full rounded-xl mb-2'
+            />
             <div className='flex justify-center items-center flex-col w-full h-10 '>
-              <p>Dev as Life <br /></p>
-              <p className='font-light text-sm'>My YouTube channel ({'>'}200k subs)</p>
+              <p>Inkdrop</p>
+              <p className='font-light text-sm'>A Markdown note-taking app</p>
             </div>
           </div>
         </Link>
