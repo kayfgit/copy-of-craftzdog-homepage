@@ -13,7 +13,7 @@ export default function Web() {
       <ul className="my-4 w-full h-40 text-[#319795] dark:text-[#81e6d9] font-bold">
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://github.com/craftzdog">
-            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-[#2c3838] cursor-pointer">
               <Github className='inline mr-3 mb-0.5' fill='currentColor' />
               @craftzdog
             </button>
@@ -21,7 +21,7 @@ export default function Web() {
         </li>
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/inkdrop_app">
-            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-[#2c3838] cursor-pointer">
               <Twitter fill='currentColor' className='inline mr-3 mb-0.5' />
               @inkdrop_app (English)
             </button>
@@ -29,7 +29,7 @@ export default function Web() {
         </li>
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://twitter.com/craftzdog">
-            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+            <button className="duration-200 px-4 py-2 rounded-lg hover:bg-[#2c3838] cursor-pointer">
               <Twitter fill='currentColor' className='inline mr-3 mb-0.5' />
               @craftzdog (日本語)
             </button>
@@ -38,7 +38,7 @@ export default function Web() {
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://instagram.com/craftzdog">
           </Link>
-          <button className="duration-200 px-4 py-2 rounded-lg hover:bg-sky-200/50 cursor-pointer">
+          <button className="duration-200 px-4 py-2 rounded-lg hover:bg-[#2c3838] cursor-pointer">
             <Instagram className='inline mr-3 mb-0.5 ' fill='currentColor' />
             @craftzdog
           </button>
