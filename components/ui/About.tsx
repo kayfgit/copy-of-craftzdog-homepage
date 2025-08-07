@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function About() {
   return (
     <main className='text-black dark:text-white '>
-      <div className="w-full h-70 flex flex-col justify-center items-center">
+      <div className="w-full h-70 flex flex-col text-center justify-center items-center">
         No idea on how to do the 3d voxel dog.. Sorry...😥
       </div>
       <div className="px-8 py-3 text-center flex justify-center items-center rounded-lg dark:bg-[#313134] bg-[#f5efe8] text-md">

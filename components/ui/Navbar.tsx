@@ -52,15 +52,15 @@ export default function NavBar() {
 
         <AnimatePresence mode="wait" initial={false}>
           <motion.div key={theme} style={{ display: 'inline-block' }} initial={{ y: -20, opacity: 0 }} animate={{ y: 5, opacity: 1 }} exit={{ y: 20, opacity: 0 }} transition={{ duration: 0.2 }}>
-            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="w-10 h-10 bg-[#805ad5] dark:bg-[#fbd38d] rounded-sm cursor-pointer hover:bg-[#6b46c1] dark:hover:bg-[#f6ad55] duration-200">
+            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="relative w-10 h-10 bg-[#805ad5] dark:bg-[#fbd38d] rounded-sm cursor-pointer hover:bg-[#6b46c1] dark:hover:bg-[#f6ad55] duration-200">
               <Image
                 src={Sun}
                 width={25}
                 height={25}
                 alt="a"
-                className="relative top-2.25 left-2.25 opacity-0 dark:opacity-100"
+                className="absolute inset-0 m-auto opacity-0 dark:opacity-100"
               />
-              <Moon fill="#fff" className="dark:opacity-0 relative -top-3 left-3" />
+              <Moon fill="#fff" className="absolute inset-0 m-auto dark:opacity-0 " />
             </button>
           </motion.div>
         </AnimatePresence>

@@ -10,7 +10,7 @@ export default function Web() {
       <span className="text-lg self-start font-bold underline decoration-4 decoration-zinc-600 underline-offset-6">
         On the web
       </span>
-      <ul className="my-4 w-full h-40 text-[#319795] dark:text-[#81e6d9] font-bold">
+      <ul className="my-4 w-full h-40 text-[#319795] dark:text-[#81e6d9] ">
         <li className="w-full h-10 flex justify-start items-center">
           <Link href="https://github.com/craftzdog">
             <button className="duration-200 px-4 py-2 rounded-lg hover:bg-[#2c3838] cursor-pointer">
